@@ -3,4 +3,4 @@ Embedded Project
 Team: - 
 1. Jaswinder Singh
 2. Bibin Babu
-3. Mohpreet Sidhu (C0749072)
+3. Mohpreet Sidhu
