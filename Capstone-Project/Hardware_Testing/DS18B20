@@ -1,0 +1,34 @@
+//Mohpreet Sidhu
+//Monitor tempreture sensor DS18B20 with Ardiuno microcontroller...
+#include <OneWire.h>
+#include <DallasTemperature.h>
+
+#define ONE_WIRE_BUS 5 //set a Digital communication pin at 5.
+
+OneWire oneWire(ONE_WIRE_BUS); 
+
+DallasTemperature sensors(&oneWire); 
+
+float Celsius = 0;
+float Fahrenheit = 0;
+
+void setup()
+{
+  sensors.begin();
+  Serial.begin(9600); //set baudrate
+}
+
+void loop() 
+{
+  sensors.requestTemperatures();
+
+  Celsius = sensors.getTempCByIndex(0); // Temp in celsius
+  Fahrenheit = sensors.toFahrenheit(Celsius); // Temp from celsius to fahrenheit
+
+  Serial.print(Celsius);
+  Serial.print(" C  ");
+  Serial.print(Fahrenheit);
+  Serial.println(" F");
+
+  delay(2000); // delay time
+}
