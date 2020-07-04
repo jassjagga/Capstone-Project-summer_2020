@@ -1,0 +1,27 @@
+Run a Network Manager :-
+> debian@beaglebone:~$ sudo connmanctl.
+
+ Enable Wifi:-
+> connmanctl> enable wifi.
+
+Scan for Wifi networks:-
+> connmanctl> scan wifi
+
+Show available Wifi services:-
+> connmanctl> services
+
+Turn on the agent:-
+> connmanctl> agent on
+
+Connect to the service of interest:
+Copy network ID of interest 
+> connmanctl> connect wifi_f45eab2e3825_47546f74686572_managed_psk
+
+Enter Wifi password:
+Passphrase?
+
+check connectivity.
+ > connmanctl> services
+
+ Quit:
+> connmanctl> quit
