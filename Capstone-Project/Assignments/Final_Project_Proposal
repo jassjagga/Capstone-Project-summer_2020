@@ -37,10 +37,10 @@ Features
 (Main Hardware Requirements)
 -	BeagleBone Black
 -	TP Link WIFI module
--	MIKEROE-200 
+-	MIKEROE-200
 -	DS18B20- Temperature Sensor 
 -	Arterial Blood Pressure sensor
--	GSM Module 
+-	SIM900 GSM Module 
 -	5V Adapter
 -	Jumper Wires 
 (Software Requirements)
