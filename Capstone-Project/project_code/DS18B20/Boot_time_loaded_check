@@ -1,0 +1,41 @@
+/opt/script/tools/version.sh
+
+bootloader:[eMMC-(default)]:[/dev/mmcblk1]:[U-Boot 2019.04-00002-g07d5700e21]:[location: dd MBR]
+UBOOT: Booted Device-Tree:[am335x-boneblack-uboot-univ.dts]
+UBOOT: Loaded Overlay:[AM335X-PRU-RPROC-4-19-TI-00A0]
+UBOOT: Loaded Overlay:[BB-ADC-00A0]
+UBOOT: Loaded Overlay:[BB-BONE-eMMC1-01-00A0]
+UBOOT: Loaded Overlay:[BB-HDMI-TDA998x-00A0]
+UBOOT: Loaded Overlay:[BB-W1-P9.12-00A2]
+kernel:[4.19.94-ti-r42]
+nodejs:[v10.15.2]
+->
+device-tree-override:[dtb_overlay=/boot/dtbs/4.19.94-ti-r42/am335x-boneblack-minimal-1wire.dtb]
+/boot/uEnv.txt Settings:
+uboot_overlay_options:[enable_uboot_overlays=1]
+uboot_overlay_options:[uboot_overlay_pru=/lib/firmware/AM335X-PRU-RPROC-4-19-TI-00A0.dtbo]
+uboot_overlay_options:[enable_uboot_cape_universal=1]
+->>
+uboot_overlay_options:[dtb_overlay=/boot/dtbs/4.19.94-ti-r42/am335x-boneblack-minimal-1wire.dtb]
+
+pkg check: to individually upgrade run: [sudo apt install --only-upgrade <pkg>]
+pkg:[bb-cape-overlays]:[4.14.20200403.0-0rcnee0~buster+20200403]
+pkg:[bb-wl18xx-firmware]:[1.20200322.0-0rcnee0~buster+20200322]
+pkg:[kmod]:[26-1]
+pkg:[librobotcontrol]:[1.0.4-git20190227.1-0rcnee0~buster+20190327]
+pkg:[firmware-ti-connectivity]:[20190717-2rcnee1~buster+20200305]
+groups:[debian : debian adm kmem dialout cdrom floppy audio dip video plugdev users systemd-journal bluetooth netdev i2c gpio pwm eqep remoteproc admin spi iio docker tisdk weston-launch xenomai cloud9ide]
+cmdline:[console=ttyO0,115200n8 bone_capemgr.uboot_capemgr_enabled=1 root=/dev/mmcblk1p1 ro rootfstype=ext4 rootwait coherent_pool=1M net.ifnames=0 lpj=1990656 rng_core.default_quality=100 quiet]
+dmesg | grep remote
+[   59.571325] remoteproc remoteproc0: wkup_m3 is available
+[   59.671792] remoteproc remoteproc0: powering up wkup_m3
+[   59.671824] remoteproc remoteproc0: Booting fw image am335x-pm-firmware.elf, size 217168
+[   59.672308] remoteproc remoteproc0: remote processor wkup_m3 is now up
+[   62.455774] remoteproc remoteproc1: 4a334000.pru is available
+[   62.477988] remoteproc remoteproc2: 4a338000.pru is available
+dmesg | grep pru
+[   62.455774] remoteproc remoteproc1: 4a334000.pru is available
+[   62.455974] pru-rproc 4a334000.pru: PRU rproc node pru@4a334000 probed successfully
+[   62.477988] remoteproc remoteproc2: 4a338000.pru is available
+[   62.478136] pru-rproc 4a338000.pru: PRU rproc node pru@4a338000 probed successfully
+dmesg | grep pinctrl-single
