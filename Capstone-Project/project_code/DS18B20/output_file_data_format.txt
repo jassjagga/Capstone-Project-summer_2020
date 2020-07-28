@@ -1,0 +1,13 @@
+why cat w1_slave 
+
+ b2 01 4b 46 7f ff 0c 10 1d : crc=1d YES
+b2 01 4b 46 7f ff 0c 10 1d t=27125
+
+here 27125 is in celises which is 27.12
+
+some other outputs
+91 01 4b 46 7f ff 0c 10 70 : crc=70 YES
+91 01 4b 46 7f ff 0c 10 70 t=25062
+
+82 01 4b 46 7f ff 0c 10 e1 : crc=e1 YES
+82 01 4b 46 7f ff 0c 10 e1 t=24125

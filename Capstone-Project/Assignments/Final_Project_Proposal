@@ -25,6 +25,7 @@ The Proposed System focuses on overcoming all the three limitation with the exis
 and a GSM module is added in order to send message to doctors phone as an alter system. The system also uses ThingSpeak as cloud storage and keeps
 on updating the data.
 
+
 Features 
 	Use of BeagleBone Black as the master of the system, TP Link version as WIFI dongle.
 	Use of DS18B20 as Temperature sensor, Arterial blood pressure sensor, MIKEROE-200 as heart Rate sensor.
@@ -36,10 +37,10 @@ Features
 (Main Hardware Requirements)
 -	BeagleBone Black
 -	TP Link WIFI module
--	MIKEROE-200 
+-	MIKEROE-200
 -	DS18B20- Temperature Sensor 
 -	Arterial Blood Pressure sensor
--	GSM Module 
+-	SIM900 GSM Module 
 -	5V Adapter
 -	Jumper Wires 
 (Software Requirements)
