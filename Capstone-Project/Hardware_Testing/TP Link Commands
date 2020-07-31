@@ -2,7 +2,7 @@ Run a Network Manager :-
 > debian@beaglebone:~$ sudo connmanctl.
 
  Enable Wifi:-
-> connmanctl> enable wifi.
+> connmanctl> enable wifi
 
 Scan for Wifi networks:-
 > connmanctl> scan wifi
