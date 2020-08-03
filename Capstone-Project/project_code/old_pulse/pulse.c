@@ -43,10 +43,10 @@ int main() {
            // }
            // else
             {
-                printf(value, "\n");
-               // printf("Bpm:%f \t", bpm);
-              //  printf("Diff:%f \t", diff);
-              //  printf("Bits:%d \n", value);
+                  printf(value, "\n");
+                  printf("Bpm:%f \t", bpm);
+                  printf("Diff:%f \t", diff);
+                  printf("Bits:%d \n", value);
                 temp = value;
             }
         }
