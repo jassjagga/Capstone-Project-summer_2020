@@ -34,14 +34,14 @@ int main() {
         {
             fptr = fopen("/sys/bus/iio/devices/iio:device0/in_voltage4_raw", "r");
             fscanf(fptr, "%d", &value);                                               //Reading the angalog output (which is a bits data)
-           // diff = fabs(value - temp);
-          //  bpm = ((1 / diff) * 60 * 1000);                                             //Equation to caluculate the BPM
-            //Loop for filtering the noise and showing BPM within range
-           // if ((bpm > 110) || (diff == 0) || (bpm < 30))
-           // {
-             //   temp = value;
-           // }
-           // else
+          diff = fabs(value - temp);
+          bpm = ((1 / diff) * 60 * 1000);                                             //Equation to caluculate the BPM
+            Loop for filtering the noise and showing BPM within range
+            if ((bpm > 110) || (diff == 0) || (bpm < 30))
+           {
+               temp = value;
+            }
+           else
             {
                   printf(value, "\n");
                   printf("Bpm:%f \t", bpm);
