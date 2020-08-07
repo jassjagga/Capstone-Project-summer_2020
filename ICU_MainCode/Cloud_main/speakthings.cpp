@@ -159,7 +159,7 @@ int main()
 		sc.connectToServer();
 		cout << "sending data" << endl;
 		head << "POST /update HTTP/1.1\n" << "Host: api.thingspeak.com\n"
-			<< "Connection: close\n" << "X-THINGSPEAKAPIKEY: B5LXA3619JOUIZ1F\n"
+			<< "Connection: close\n" << "X-THINGSPEAKAPIKEY: XXXXXXXXXXXXXXX\n" //change  XXXXXX with your channel Key
 			<< "Content-Type: application/x-www-form-urlencoded\n"
 			<< "Content-Length:" << string(data.str()).length() << "\n\n";
 		sc.send(string(head.str()));
@@ -192,7 +192,7 @@ int main()
 				cout << "sending data" << endl;
 				head << "POST /update HTTP/1.1\n" << "Host: api.thingspeak.com\n"
 					<< "Connection: close\n"
-					<< "X-THINGSPEAKAPIKEY: B5LXA3619JOUIZ1F\n"
+					<< "X-THINGSPEAKAPIKEY: XXXXXXXXXXXXX\n"
 					<< "Content-Type: application/x-www-form-urlencoded\n"
 					<< "Content-Length:" << string(data.str()).length() << "\n\n";
 				sc.send(string(head.str()));
@@ -216,7 +216,7 @@ int main()
 		sc1.connectToServer();
 		cout << "sending data" << endl;
 		head1 << "POST /update HTTP/1.1\n" << "Host: api.thingspeak.com\n"
-			<< "Connection: close\n" << "X-THINGSPEAKAPIKEY: B5LXA3619JOUIZ1F\n"
+			<< "Connection: close\n" << "X-THINGSPEAKAPIKEY: XXXXXXXXXXXXXXXXX\n"
 			<< "Content-Type: application/x-www-form-urlencoded\n"
 			<< "Content-Length:" << string(data1.str()).length() << "\n\n";
 		sc1.send(string(head1.str()));
