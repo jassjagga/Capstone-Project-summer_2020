@@ -13,13 +13,16 @@ using namespace std;
 using namespace exploringRPi;
 using namespace std::chrono;
 
+//Path for gpio pin for pulse sensor 
 #define pin115 "/sys/class/gpio/gpio115/value"
 #define pin117 "/sys/class/gpio/gpio117/value"
 
+//vector string iterator to store and update that to the cloud.
 vector<string>::iterator iter;
 
+//variables
 int counter;
-int timer_counter = 3;
+int timer_counter = 3;      //this counter used as a time delay for blood pressure sensor
 bool lock;
 
 //For Temperature Sensor DS18B20
@@ -57,6 +60,7 @@ int getCPUTemperature() {
 //-------------------------------------------------------------
 void Blood(string* data1, string* data2, string* data3) {
 	string sys, dys, pulse;
+	//calling the blood pressure function to get the data
 	system("/usr/bin/python2.7 /home/debian/Blood_pressure/BP.py");
 
 	ifstream Myfile;
