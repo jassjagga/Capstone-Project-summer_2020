@@ -23,4 +23,4 @@ def sendsms(number,text):
     ser.write(ascii.ctrl('z'))
 
 
-sendsms('+16478072357','Alert! Patient Need attention')
+sendsms('+1XXXXXXXXXX','Alert! Patient Need attention')
