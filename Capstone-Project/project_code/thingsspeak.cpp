@@ -8,11 +8,10 @@ using namespace exploringBB;
 //Starting Main
 int main() {
    ostringstream head, data;         //Output string stream
-//int val1=34,val2=60,val3=78,num=100;
+int val1,val2,val3,num=100;
    cout << "Starting ThingSpeak Example" << endl;
 cout << "Enter the temperature: "<< endl;
- cin >> val1[i];
-//while(num>0)
+ cin >> val1;
 
    SocketClient sc("api.thingspeak.com",80);   //SocketClient is used to connect to the network host
    data << "field1=" << val1 << endl;          //Sending val1 to Feild1 of channel
