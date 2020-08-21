@@ -1,0 +1,15 @@
+[Unit]
+
+Description = autrun
+
+After= getty.target
+
+[Service]
+
+Type=simple
+
+ExecStart= /usr/local/sbin/autrun.sh
+
+[Install]
+
+WantedBy=multi-user.target
