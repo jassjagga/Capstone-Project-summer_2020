@@ -3,11 +3,11 @@ To Make your Program autorun when boot the beaglebone
 1. First create the bash script simply provide the path to our .out file if you are runing c or c++ file.
 
 eg: - 
---------------------------------------------  
+________________________________________________________
 #!/bin/bash 
 sleep 5
 /home/debian/projects/Cloud_main/bin/Cloud_main.out
---------------------------------------------------
+________________________________________________________
 2. Provide all executative access to your .sh file 
 
 >> sudo chmod 755 /myfile.sh
@@ -43,7 +43,7 @@ If you don't want to type the login id and password again edit the autolog_in fi
 change the 
 [Service]
 ExecStart=-/sbin/agetty -a root -s %I 115200      //change ExecStart line with this line in serial-getty@service file in same service folder
----------------------------------------------------------------------------------------------------------------------
+_____________________________________________________________________________________________________________
 
 To check the status of your service type this command 
 
