@@ -28,7 +28,7 @@ cout << "Enter the temperature: "<< endl;
    sc.send(string(head.str()));      //Request to send data to cloud
    sc.send(string(data.str()));     //Sending data to cloud
    string rec = sc.receive(1024);   //Used to check the status of data send
-   cout << "[" << rec << "]" << endl;
+   cout << "[" << rec << "]" << endl;   // Gives some ASCII at the end to the monitor
    cout << "End of ThingSpeak Example" << endl;
 sleep(15);                          //Delay used to send data 15s
 ostringstream head1, data1;        //Output String Stream for sending second data
