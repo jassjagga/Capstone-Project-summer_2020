@@ -1,4 +1,4 @@
-#include <iostream>   //Input Outpu Header file
+#include <iostream>   //Input Output Header file
 #include <fstream>    //Header Used to open file (file stream)
 #include<cstdio>
 #include<string.h>
