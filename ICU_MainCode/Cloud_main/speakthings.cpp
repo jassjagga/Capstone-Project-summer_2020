@@ -1,13 +1,13 @@
-#include <iostream>
-#include <fstream>
+#include <iostream>   //Input Outpu Header file
+#include <fstream>    //Header Used to open file (file stream)
 #include<cstdio>
 #include<string.h>
 #include<iterator>
 #include<vector>
-#include<sstream>
-#include<chrono>
-#include<thread>
-#include "SocketClient.h"
+#include<sstream>      // String Stream file
+#include<chrono>      
+#include<thread>       //Used along with chrono for delay
+#include "SocketClient.h" // Header file used for Cloud connection
 
 using namespace std;
 using namespace exploringRPi;
