@@ -10,7 +10,7 @@ int main() {
    ostringstream head, data;         //Output string stream
 int val1,val2,val3,num=100;
    cout << "Starting ThingSpeak Example" << endl;
-cout << "Enter the temperature: "<< endl;
+cout << "Enter the temperature: "<< endl;          //Inputing data manually
  cin >> val1;
 
    SocketClient sc("api.thingspeak.com",80);   //SocketClient is used to connect to the network host
