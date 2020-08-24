@@ -1,6 +1,6 @@
 To Make your Program autorun when boot the beaglebone
 =============================================================
-1. First create the bash script simply provide the path to our .out file if you are runing c or c++ file.
+1. First create the bash script simply provide the path to our execution file (.o, .out) file if you are runing c or c++ file.
 
 eg: - 
 ________________________________________________________
