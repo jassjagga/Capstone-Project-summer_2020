@@ -42,11 +42,14 @@ _____________________________________________________
 
 If you don't want to type the login id and password again edit the autolog_in file 
 
-change the 
+change 
+
 
 [Service]
 
 ExecStart=-/sbin/agetty -a root -s %I 115200      //change ExecStart line with this line in serial-getty@service file in same service folder
+
+>> serial-getty@service file is also loacted at /lib/systemd/system/serial-getty@serive 
 _____________________________________________________________________________________________________________
 
 To check the status of your service type this command 
