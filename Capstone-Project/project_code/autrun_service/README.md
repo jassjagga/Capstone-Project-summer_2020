@@ -60,6 +60,11 @@ if it say disable to enable this service type this command
 
 >> sudo systemctl enable myfile.service 
 
+Commands to start and stop the service 
+
+>> sudo systemctl start myfile.service
+>> sudo systemctl stop myfile.service
+
 Now you are done 
 So Now when you restart your Beaglebone black your program start within few seconds after the boot process. 
 
