@@ -11,6 +11,7 @@ sleep 5
 
 /home/debian/projects/Cloud_main/bin/Cloud_main.out
 ________________________________________________________
+
 2. Provide all executative access to your .sh file 
 
 >> sudo chmod 755 /myfile.sh
