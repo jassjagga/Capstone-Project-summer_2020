@@ -4,6 +4,7 @@ To Make your Program autorun when boot the beaglebone
 
 eg: - 
 ________________________________________________________
+
 #!/bin/bash 
 
 sleep 5
