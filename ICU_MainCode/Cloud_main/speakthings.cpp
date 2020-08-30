@@ -94,7 +94,6 @@ int pulse_counter(int a) {
 	}
 	return counter;
 }
-
 //Pulse sensor detection and reading -------------------------
 int pulse_sensor() {
 	counter = 0;
