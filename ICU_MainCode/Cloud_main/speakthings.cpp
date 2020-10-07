@@ -26,7 +26,7 @@ int timer_counter = 3;      //this counter used as a time delay for blood pressu
 bool lock;
 
 //For Temperature Sensor DS18B20
-//----------------------------------------------
+//-------------------------------------------
 int getCPUTemperature() {
 	char path[] = "/sys/bus/w1/devices/28-01191a41efa3/";
 	char file[] = "w1_slave";
