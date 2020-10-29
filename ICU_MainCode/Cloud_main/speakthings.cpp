@@ -30,7 +30,6 @@ int getCPUTemperature() {
 	char path[] = "/sys/bus/w1/devices/28-01191a41efa3/";
 	char file[] = "w1_slave";
 	char full[256];
-
 	snprintf(full, sizeof(full), "%s%s", path, file);
 	FILE* fs = fopen(full, "r");
 	if (fs == NULL) {
