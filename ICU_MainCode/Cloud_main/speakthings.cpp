@@ -18,7 +18,6 @@ using namespace std::chrono;
 
 //vector string iterator to store and update that to the cloud.
 vector<string>::iterator iter;
-
 //variables
 int counter;
 int timer_counter = 3;      //this counter used as a time delay for blood pressure sensor
