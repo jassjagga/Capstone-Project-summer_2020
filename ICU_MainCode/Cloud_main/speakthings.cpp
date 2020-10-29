@@ -12,7 +12,6 @@
 using namespace std;
 using namespace exploringRPi;
 using namespace std::chrono;
-
 //Path for gpio pin for pulse sensor 
 #define pin115 "/sys/class/gpio/gpio115/value"
 #define pin117 "/sys/class/gpio/gpio117/value"
