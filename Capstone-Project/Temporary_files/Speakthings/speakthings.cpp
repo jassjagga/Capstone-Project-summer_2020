@@ -15,6 +15,7 @@ int getCPUTemperature() {          // get the CPU temperature
    return cpuTemp;
 }
 
+
 int main() {
    ostringstream head, data;
    cout << "Starting ThingSpeak Example" << endl;
