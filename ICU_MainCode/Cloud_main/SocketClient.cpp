@@ -51,7 +51,6 @@ namespace exploringRPi {
         return 0;
     }
 
-
     string SocketClient::receive(int size = 1024) {
         char readBuffer[size];
         int n = read(this->socketfd, readBuffer, sizeof(readBuffer));
