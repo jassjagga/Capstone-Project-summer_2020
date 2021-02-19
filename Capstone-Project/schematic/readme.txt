@@ -1,1 +1,2 @@
-schematic of project using EasyEDA software 
+//schematic of project using EasyEDA software 
+//
