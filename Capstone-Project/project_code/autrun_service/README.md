@@ -46,7 +46,6 @@ If you don't want to type the login id and password again edit the autolog_in fi
 
 change 
 
-
 [Service]
 
 ExecStart=-/sbin/agetty -a root -s %I 115200      //change ExecStart line with this line in serial-getty@service file in same service folder
