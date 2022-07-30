@@ -55,7 +55,7 @@ int getCPUTemperature() {
 }
 
 //For Blood Pressure Sensor 
-//-------------------------------------------------------------
+//----------------------------------------------------------
 void Blood(string* data1, string* data2, string* data3) {
 	string sys, dys, pulse;
 	//calling the blood pressure function to get the data
