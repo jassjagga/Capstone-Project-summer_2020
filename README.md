@@ -9,7 +9,7 @@ The aim of our proposal is to design a system in order to monitor the ICU patien
 Things Speak is the cloud used for our system and BeagleBone Black is the main processing unit.
 
 ==============================
-Team: -
+Team:-
 1. Jaswinder Singh
 2. Bibin Babu
 3. Mohpreet Sidhu
